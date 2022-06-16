@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #000;
+}
+
+#area-banner {
+    min-height: 710px;
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%,rgba(224, 224, 224, 0) 50%,rgba(0, 0, 0, 1) 100%),
+    url(https://assets.nflxext.com/ffe/siteui/vlv3/a1dc92ca-091d-4ca9-a05b-8cd44bbfce6a/f9368347-e982-4856-a5a4-396796381f28/RS-en-20191230-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-position: center;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+#navbar img {
+    height: 45px;
+    width: 165px;
+}
+
+#navbar-buttons {
+    display: flex;
+}
+
+#navbar select {
+    margin-right: 15px;
+    background: rgba(0,0,0,.4);
+    border: 1px solid #aaa;
+    color: #fff;
+    border-radius: 2px;
+    padding: 8px;
+}
+
+#navbar button {
+    background-color: #e50914;
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+}
+
+#banner-texto {
+    padding: 100px 45px;
+    text-align: center;
+    color: white
+}
+
+#banner-texto h1 {
+    font-size: 4rem;
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.1;
+}
+
+#banner-texto h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+    max-width: 640px;
+    margin: 1rem auto;
+}
+
+#banner-texto h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#email-form {
+    display: flex;
+    margin: 0 auto;
+    place-content: center;
+}
+
+#email-form input {
+    min-width: 450px;
+    height: 60px;
+    border-top-right-radius: 0;
+    max-width: 500px;    
+    border: solid 1px #8c8c8c;
+    border-radius: 2px;
+}
+
+#email-form button {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-left: 1px solid #333;
+    font-size: 1.625rem;
+    min-height: 64px;
+    box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.item-box {
+    padding: 70px 45px;
+}
+
+.item {
+    display: flex;
+    place-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.item-image{
+    width: 52%;
+}
+
+.item-image img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    margin: -50px 0 0 0px;
+}
+
+.item-conteudo {
+    color: white;
+    width: 52%;
+}
+
+.item-titulo {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.item-descricao {
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+.reverse {
+    flex-flow: row-reverse;
+}
+
+.border-bottom {
+    border-bottom: 8px solid #222;
+}
+
+.conteudo-padding-left {    
+    padding: 0 0 0 3rem;
+}
+
+.conteudo-padding-right {    
+    padding: 0 3rem 0 0;
+}
+
+#perguntas {
+    text-align: center;
+}
+
+#perguntas h1 {
+    color: white;
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+#perguntas ul {    
+    width: 75%;
+    margin: 2em auto;
+    padding: 0;
+    max-width: 815px;
+}
+
+#perguntas ul li {
+    list-style-type: none;
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    font-weight: 400;
+    position: relative;
+    border: 0;
+    display: block;
+    text-align: left;
+    background: #303030;
+    color: white;    
+    margin: 0 0 8px 0;
+    font-size: 1.625rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .item {
+        flex-flow: column;
+    }
+
+    #perguntas ul {    
+        width: 90%;        
+    }
+}
