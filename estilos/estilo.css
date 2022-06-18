@@ -29,13 +29,24 @@ body {
     display: flex;
 }
 
-#navbar select {
+.box-idioma {
+    position: relative;
+}
+
+.box-idioma i {
+    position: absolute;
+    color: white;
+    left: 7px;
+    top: 9px;
+}
+
+#navbar select  {
     margin-right: 15px;
     background: rgba(0,0,0,.4);
     border: 1px solid #aaa;
     color: #fff;
     border-radius: 2px;
-    padding: 8px;
+    padding: 8px 8px 8px 24px;
 }
 
 #navbar button {
@@ -104,6 +115,10 @@ body {
     padding: 0 1em;
 }
 
+#email-form button i {
+    margin-left: 15px;
+}
+
 .item-box {
     padding: 70px 45px;
 }
@@ -161,10 +176,10 @@ body {
 
 #perguntas {
     text-align: center;
+    color: white;
 }
 
 #perguntas h1 {
-    color: white;
     font-size: 3.125rem;
     line-height: 1.1;
     margin-bottom: 0.5rem;
@@ -191,6 +206,68 @@ body {
     font-size: 1.625rem;
 }
 
+#perguntas ul li i {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#rodape {
+    padding: 70px 45px;
+}
+
+#titulo-rodape {
+    font-size: 16px;
+    color: #757575;
+    margin-bottom: 24px;
+}
+
+#rodape-box {
+    font-size: 13px;
+    color: #757575;
+    max-width: 900px;
+    padding: 0;
+    margin-bottom: 16px;
+    margin: 0 auto;
+}
+
+#rodape ul {
+    padding: 0;
+}
+
+#rodape ul li {
+    list-style: none;
+    display: inline-block;
+    min-width: 100px;
+    margin-bottom: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 100px;
+    width: 24%;
+    vertical-align: top;
+}
+
+#rodape select  {
+    margin-right: 15px;
+    background: rgba(0,0,0);
+    border: 1px solid #757575;
+    color: #757575;
+    border-radius: 2px;
+    padding: 12px 12px 12px 24px;
+    font-size: 16px;
+}
+
+#rodape i {
+    color: #757575;
+    left: 10px;
+    top: 15px;
+}
+
+#rodape p {
+    font-size: 13px;
+    margin-top: 24px;
+}
+
 @media only screen and (max-width: 768px) {
     .item {
         flex-flow: column;
@@ -198,5 +275,9 @@ body {
 
     #perguntas ul {    
         width: 90%;        
+    }
+
+    #rodape ul li {
+        width: 50%;
     }
 }

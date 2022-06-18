@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <title>Arniaflix</title>
     <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <div id="area-banner" class="border-bottom">
             <div id="navbar">
                 <div><img src="imagens/logo.png"/></div>
                 <div id="navbar-buttons">
-                    <div>
+                    <div class="box-idioma">
                         <select name="idioma" id="idioma">
                             <option value="portugues">Português</option>
                             <option value="english">Inglês</option>
                         </select>
+                        <i class="fa-solid fa-globe"></i>
                     </div>
                     <div>
                         <button type="button">Entrar</button>
@@ -32,6 +34,7 @@
                     <div id="email-form-button">
                         <button>
                             <span>Vamos lá</span>
+                            <i class="fa-solid fa-angle-right"></i>
                         </button>
                     </div>    
                 </div>
@@ -97,14 +100,82 @@
                 </div>
             </div>
         </div>
-        <div id="perguntas" class="item-box">
+        <div id="perguntas" class="item-box border-bottom">
             <h1>Perguntas frequentes</h1>
             <ul id="perguntas-lista">
-                <li>O que é a Netflix?</li>
-                <li>Quanto custa a Netflix?</li>
-                <li>Onde posso assitir?</li>
-                <li>Como faço para cancelar?</li>
+                <li>
+                    O que é a Netflix?
+                    <i class="fa-solid fa-plus"></i>
+                </li>
+                <li>
+                    Quanto custa a Netflix?
+                    <i class="fa-solid fa-plus"></i>
+                </li>
+                <li>
+                    Onde posso assitir?
+                    <i class="fa-solid fa-plus"></i>
+                </li>
+                <li>
+                    Como faço para cancelar?
+                    <i class="fa-solid fa-plus"></i>
+                </li>
+                <li>
+                    O que eu posso assitir na Netflix?
+                    <i class="fa-solid fa-plus"></i>
+                </li>
+                <li>
+                    A Netflix é adequada para crianças?
+                    <i class="fa-solid fa-plus"></i>
+                </li>
             </ul>
+
+            <div class="banner-texto">
+                <h3>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
+                <div id="email-form">                
+                    <div id="email-form-input">
+                        <input type="text" id="email" name="email">
+                    </div>    
+                    <div id="email-form-button">
+                        <button>
+                            <span>Vamos lá</span>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div id="rodape">
+            <div id="rodape-box">
+                <div id="titulo-rodape">Dúvidas? Ligue 0800 591 8942</div>
+                <ul>
+                    <li><a href="#"></a>Perguntas frequentes</li>
+                    <li><a href="#"></a>Centro de ajuda</li>
+                    <li><a href="#"></a>Conta</li>
+                    <li><a href="#"></a>Media Center</li>
+                    <li><a href="#"></a>Relações com investidores</li>
+                    <li><a href="#"></a>Carreiras</li>
+                    <li><a href="#"></a>Resgatar cartão pré-pago</li>
+                    <li><a href="#"></a>Comprar cartão pré-pago</li>
+                    <li><a href="#"></a>Formas de assistir</li>
+                    <li><a href="#"></a>Termos de uso</li>
+                    <li><a href="#"></a>Privacidade</li>
+                    <li><a href="#"></a>Preferências de cookies</li>
+                    <li><a href="#"></a>Informações corporativas</li>
+                    <li><a href="#"></a>Só na Netflix</li>
+                    <li><a href="#"></a>Entre em contato</li>
+                    <li><a href="#"></a>Teste de velocidade</li>
+                    <li><a href="#"></a>Avisos legais</li>
+                </ul>    
+                <div class="box-idioma">
+                    <select name="idioma" id="idioma">
+                        <option value="portugues">Português</option>
+                        <option value="english">Inglês</option>
+                    </select>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <p>Netflix Brasil</p>
+            </div>         
         </div>
     </body>
 </html>
